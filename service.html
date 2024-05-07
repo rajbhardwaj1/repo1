@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission service</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #b1{
+            height: 40px;
+            width: 100px;
+            margin-top: 15px;
+            border: 1px solid black;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .div2{
+            padding-top: 10px;
+        }
+        fieldset{
+            margin-left: 30px;
+            border: 1px solid black;
+        }
+        #b2{
+            height: 40px;
+            width: 140px;
+            border-radius: 10px;
+            margin-left: 70px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 45px;
+            
+        }
+        legend{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #tab,th,#td2{
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 18px;
+            text-align: center;
+        }
+        th{
+            background-color: #f1dbdb;
+            height: 35px;
+            /* padding: 10px; */
+        }
+        #td2{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 70px;width: 100%;background-color:rgb(48, 169, 250);display: flex;">
+        <img src="	https://cdn-icons-png.flaticon.com/512/4413/4413549.png" height="40" width="40" style="margin: 20px;" alt="home">
+        <h3 style="margin-top: 30px; color: rgb(58, 10, 231);">HOME</h3>
+        <button id="b1" style="background-color: rgb(81, 169, 252); margin-left: 990px;border-top-left-radius: 10px;border-bottom-left-radius: 10px;">Entry</button>
+        <button id="b1" style=" border-top-right-radius: 10px;border-bottom-right-radius: 10px;">Service</button>
+    </div>
+    <div class="div2" style="height: 45px; width: 100%; background-color: rgb(151, 227, 233);text-align: center;">
+        <h1><b>Admission Service</b></h1>
+    </div>
+    <table style="margin: 40px;">
+        <tr>
+            <td>
+                
+                <fieldset style="width: 380px;text-align: center;height: 50px;">
+                    <legend style="text-align: left;margin-left: 30px;">Your Choice</legend>
+                    <select name="reg" style="border: 0px;width: 99%;text-align: center;font-size: 18px;">
+                        
+                        <option value="reg">
+                            Registration No.
+                        </option>
+                        <option value="reg">Admission date</option>
+                    </select>
+                </fieldset>
+            
+            </td>
+            <td>
+                
+                <fieldset style="width: 380px;text-align: center;height: 50px;">
+                    <legend style="text-align: left;margin-left: 35px;">Registration No.</legend>
+                    <input type="text" value="REPL/BR01/23/R0001" style="border: 0px;width: 94%;font-size: 18px;">
+                </fieldset>
+            
+            </td>
+            <td ><fieldset style="width: 180px;text-align: center;height: 50px;">
+                <legend style="text-align: left;margin-left: 32px;">From</legend>
+                <input type="date" style="border: 0px;width: 90%;margin-left: 10px;font-size: 16px;">
+            </fieldset></td>
+            <td>
+                <fieldset style="width: 180px;text-align: center;height: 50px;">
+                    <legend style="text-align: left;margin-left: 20px;">To</legend>
+                    <input type="date" style="border: 0px;width: 90%;margin-left: 10px;font-size: 16px;">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" >
+                <button id="b2" style="margin-left: 350px;background-color: green;"><img src="https://icon-library.com/images/svg-search-icon/svg-search-icon-9.jpg" height="15" width="15" style="margin-right: 10px;">Search</button>
+                <button id="b2" style="background-color: red;"><img src="https://icon-library.com/images/refresh-icon-white/refresh-icon-white-0.jpg" height="17" width="17" style="margin-right: 10px;text-align: center;">Refresh</button>
+                <button id="b2" style="background-color: blue;text-align: left;padding-left: 10px;padding-top: 2px;"><img src="https://www.freeiconspng.com/uploads/white-download-icon-png-32.png" height="17" width="30" > <span style="position:absolute;">Download</span></button>
+            </td>
+        </tr>
+    </table>
+    <table  id="tab" style="margin-top: 45px;margin-left: 90px;">
+        <tr style="height: 30px;" id="tab">
+            <th style="width: 30px;">Sn</th>
+            <th style="width: 150px;">Admission No</th>
+            <th style="width: 160px;">Admission Date</th>
+            <th style="width: 210px;">Registration No</th>
+            <th style="width: 160px;">Course Applied</th>
+            <th style="width: 120px;">Course Fee</th>
+            <th style="width: 120px;">Disc. Type</th>
+            <th style="width: 120px;">Discount</th>
+            <th colspan="3" style="width: 100px;">Check</th>
+        </tr>
+        <tr><td id="td2">1</td>
+            <td id="td2">23A005</td>
+            <td id="td2">2023-07-27</td>
+            <td id="td2">REPL/BR01/23/R0001</td>
+            <td id="td2">fswd</td>
+            <td id="td2">30</td>
+            <td id="td2">Installment</td>
+            <td id="td2">0</td>
+            <td id="td2"><img src="	https://cdn-icons-png.flaticon.com/512/10747/10747217.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861294.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/1009/1009339.png" width="20" height="20"></td>
+
+        </tr>
+        <tr>
+            <td id="td2">2</td>
+            <td id="td2">23A004</td>
+            <td id="td2">2023-07-27</td>
+            <td id="td2">REPL/BR01/23/R0001</td>
+            <td id="td2">fswd</td>
+            <td id="td2">5000</td>
+            <td id="td2">Installment</td>
+            <td id="td2">250</td>
+            <td id="td2"><img src="	https://cdn-icons-png.flaticon.com/512/10747/10747217.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861294.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/1009/1009339.png" width="20" height="20"></td>
+        </tr>
+        <tr>
+            <td id="td2">3</td>
+            <td id="td2">23A003</td>
+            <td id="td2">2023-07-25</td>
+            <td id="td2">REPL/BR01/23/R0001</td>
+            <td id="td2">fswd</td>
+            <td id="td2">2000</td>
+            <td id="td2">None</td>
+            <td id="td2">200 </td>
+            <td id="td2"><img src="	https://cdn-icons-png.flaticon.com/512/10747/10747217.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861294.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/1009/1009339.png" width="20" height="20"></td>
+        </tr>
+        <tr>
+            <td id="td2">4</td>
+            <td id="td2">23A002</td>
+            <td id="td2">2023-07-18</td>
+            <td id="td2">REPL/BR01/23/R0001</td>
+            <td id="td2">fswd</td>
+            <td id="td2">18000</td>
+            <td id="td2">None</td>
+            <td id="td2">20000</td>
+            <td id="td2"><img src="	https://cdn-icons-png.flaticon.com/512/10747/10747217.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861294.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/1009/1009339.png" width="20" height="20"></td>
+        </tr>
+        <tr>
+            <td id="td2">5</td>
+            <td id="td2">23A001</td>
+            <td id="td2">2023-07-20</td>
+            <td id="td2">REPL/BR01/23/R0001</td>
+            <td id="td2">fswd</td>
+            <td id="td2">2000</td>
+            <td id="td2">None</td>
+            <td id="td2">200</td>
+            <td id="td2"><img src="	https://cdn-icons-png.flaticon.com/512/10747/10747217.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/6861/6861294.png" width="20" height="20"></td>
+            <td id="td2"><img src="https://cdn-icons-png.flaticon.com/512/1009/1009339.png" width="20" height="20"></td>
+        </tr>
+        
+    </table>
+<p style="text-align: center;margin-top: 40px;color:rgba(0,0,0,0);">by RAJ</p>
+    
+</body>
+</html>
